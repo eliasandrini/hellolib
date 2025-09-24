@@ -1,7 +1,7 @@
 {
   description = "hellolib derivation";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
 
   outputs = { self, nixpkgs }:
   let
@@ -18,7 +18,7 @@
   {
     overlays.default = nixpkgs.lib.composeManyExtensions my_overlays;
     packages.${system}.default = pkgs.hello_lib;
-    devShells.${system}.default = pkgs.mkShell {
+    devShells.${system} = pkgs.mkShell {
       packages =
         with pkgs;
         [
