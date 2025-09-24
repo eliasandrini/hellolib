@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/elia/HyTech/hellolib/src/hellolib.cpp" "CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o" "gcc" "CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o.d"
+  "/home/elia/hellolib/hellolib/src/hellolib.cpp" "CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o" "gcc" "CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

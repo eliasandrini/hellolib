@@ -1,5 +1,5 @@
 CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: \
- /home/elia/HyTech/hellolib/src/hellolib.cpp /usr/include/stdc-predef.h \
+ /home/elia/hellolib/hellolib/src/hellolib.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -149,4 +149,4 @@ CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/elia/HyTech/hellolib/include/hellolib.h
+ /home/elia/hellolib/hellolib/include/hellolib.h

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/elia/HyTech/hellolib/include
+CXX_INCLUDES = -I/home/elia/hellolib/hellolib/include
 
 CXX_FLAGS = 
 

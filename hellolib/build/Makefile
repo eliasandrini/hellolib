@@ -57,10 +57,10 @@ RM = /opt/cmake-3.29.2-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elia/HyTech/hellolib
+CMAKE_SOURCE_DIR = /home/elia/hellolib/hellolib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elia/HyTech/hellolib/build
+CMAKE_BINARY_DIR = /home/elia/hellolib/hellolib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elia/HyTech/hellolib/build/CMakeFiles /home/elia/HyTech/hellolib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elia/hellolib/hellolib/build/CMakeFiles /home/elia/hellolib/hellolib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elia/HyTech/hellolib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elia/hellolib/hellolib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

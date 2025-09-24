@@ -1,4 +1,4 @@
-# Install script for directory: /home/elia/HyTech/hellolib
+# Install script for directory: /home/elia/hellolib/hellolib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/elia/HyTech/hellolib/build/libHelloWorldLibrary.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/elia/hellolib/hellolib/build/libHelloWorldLibrary.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary/HelloWorldLibraryTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary/HelloWorldLibraryTargets.cmake"
-         "/home/elia/HyTech/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets.cmake")
+         "/home/elia/hellolib/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary/HelloWorldLibraryTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -63,14 +63,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/HyTech/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/hellolib/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/HyTech/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/hellolib/hellolib/build/CMakeFiles/Export/2ffb17b3068b2836f39a08645db4017b/HelloWorldLibraryTargets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/HyTech/hellolib/build/HelloWorldLibraryConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HelloWorldLibrary" TYPE FILE FILES "/home/elia/hellolib/hellolib/build/HelloWorldLibraryConfig.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -82,7 +82,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include" TYPE DIRECTORY FILES "/home/elia/HyTech/hellolib/include/" FILES_MATCHING REGEX "/[^/]*\\.h[^/]*$")
+  file(INSTALL DESTINATION "/usr/local/include" TYPE DIRECTORY FILES "/home/elia/hellolib/hellolib/include/" FILES_MATCHING REGEX "/[^/]*\\.h[^/]*$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -93,5 +93,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/elia/HyTech/hellolib/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/elia/hellolib/hellolib/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

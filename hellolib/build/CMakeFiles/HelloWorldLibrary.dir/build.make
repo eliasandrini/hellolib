@@ -53,10 +53,10 @@ RM = /opt/cmake-3.29.2-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elia/HyTech/hellolib
+CMAKE_SOURCE_DIR = /home/elia/hellolib/hellolib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elia/HyTech/hellolib/build
+CMAKE_BINARY_DIR = /home/elia/hellolib/hellolib/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HelloWorldLibrary.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/HelloWorldLibrary.dir/progress.make
 include CMakeFiles/HelloWorldLibrary.dir/flags.make
 
 CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: CMakeFiles/HelloWorldLibrary.dir/flags.make
-CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: /home/elia/HyTech/hellolib/src/hellolib.cpp
+CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: /home/elia/hellolib/hellolib/src/hellolib.cpp
 CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o: CMakeFiles/HelloWorldLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elia/HyTech/hellolib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o -MF CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o.d -o CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o -c /home/elia/HyTech/hellolib/src/hellolib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elia/hellolib/hellolib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o -MF CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o.d -o CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o -c /home/elia/hellolib/hellolib/src/hellolib.cpp
 
 CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elia/HyTech/hellolib/src/hellolib.cpp > CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elia/hellolib/hellolib/src/hellolib.cpp > CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.i
 
 CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elia/HyTech/hellolib/src/hellolib.cpp -o CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elia/hellolib/hellolib/src/hellolib.cpp -o CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.s
 
 # Object files for target HelloWorldLibrary
 HelloWorldLibrary_OBJECTS = \
@@ -93,7 +93,7 @@ HelloWorldLibrary_EXTERNAL_OBJECTS =
 libHelloWorldLibrary.a: CMakeFiles/HelloWorldLibrary.dir/src/hellolib.cpp.o
 libHelloWorldLibrary.a: CMakeFiles/HelloWorldLibrary.dir/build.make
 libHelloWorldLibrary.a: CMakeFiles/HelloWorldLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/elia/HyTech/hellolib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libHelloWorldLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/elia/hellolib/hellolib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libHelloWorldLibrary.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/HelloWorldLibrary.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorldLibrary.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/HelloWorldLibrary.dir/clean:
 .PHONY : CMakeFiles/HelloWorldLibrary.dir/clean
 
 CMakeFiles/HelloWorldLibrary.dir/depend:
-	cd /home/elia/HyTech/hellolib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elia/HyTech/hellolib /home/elia/HyTech/hellolib /home/elia/HyTech/hellolib/build /home/elia/HyTech/hellolib/build /home/elia/HyTech/hellolib/build/CMakeFiles/HelloWorldLibrary.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/elia/hellolib/hellolib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elia/hellolib/hellolib /home/elia/hellolib/hellolib /home/elia/hellolib/hellolib/build /home/elia/hellolib/hellolib/build /home/elia/hellolib/hellolib/build/CMakeFiles/HelloWorldLibrary.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/HelloWorldLibrary.dir/depend
 

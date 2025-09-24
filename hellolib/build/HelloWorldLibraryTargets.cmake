@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(HelloWorldLibrary::HelloWorldLibrary STATIC IMPORTED)
 
 set_target_properties(HelloWorldLibrary::HelloWorldLibrary PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/elia/HyTech/hellolib/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/elia/hellolib/hellolib/include"
 )
 
 # Import target "HelloWorldLibrary::HelloWorldLibrary" for configuration ""
 set_property(TARGET HelloWorldLibrary::HelloWorldLibrary APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(HelloWorldLibrary::HelloWorldLibrary PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/home/elia/HyTech/hellolib/build/libHelloWorldLibrary.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/elia/hellolib/hellolib/build/libHelloWorldLibrary.a"
   )
 
 # This file does not depend on other imported targets which have
