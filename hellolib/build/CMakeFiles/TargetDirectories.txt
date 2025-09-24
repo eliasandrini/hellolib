@@ -1,7 +1,0 @@
-/home/elia/hellolib/hellolib/build/CMakeFiles/HelloWorldLibrary.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/edit_cache.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/rebuild_cache.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/list_install_components.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/install.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/install/local.dir
-/home/elia/hellolib/hellolib/build/CMakeFiles/install/strip.dir
