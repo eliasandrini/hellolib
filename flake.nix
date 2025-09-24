@@ -1,24 +1,30 @@
 {
-  description = "part 3 hello app";
+  description = "hellolib derivation";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    hellolib.url = "github:eliasandrini/";
-  };
+  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
-  outputs = { self, nixpkgs, hellolib }:
+  outputs = { self, nixpkgs }:
   let
-      system = "x86_64-linux";
-    helloPkg = hellolib.packages.${system}.default
+    system = "x86_64-linux";
+    hello_lib_overlay = final: prev: {
+      hello_lib = final.callPackage ./default.nix {};
+    };
+    my_overlays = [ hello_lib_overlay ];
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [ hellolib.overlays.default ];
+      overlays = [ self.overlays.default ];
     };
   in
   {
-    packages.${system}.default = pkgs.callPackage ./default.nix {hellolib = helloPkg};
+    overlays.default = nixpkgs.lib.composeManyExtensions my_overlays;
+    packages.${system}.default = pkgs.hello_lib;
     devShells.${system}.default = pkgs.mkShell {
-      buildInputs = [ pkgs.cmake, helloPkg]
-    }
+      packages =
+        with pkgs;
+        [
+          cmake
+          hello_lib
+        ];
+    };
   };
 }
